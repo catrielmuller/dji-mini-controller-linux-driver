@@ -55,7 +55,7 @@ args = parser.parse_args()
 invert = frozenset(args.invert)
 
 # Open Joystick
-device = uinput.Device(events)
+device = uinput.Device(events, 'Mavic Mini RC')
 time.sleep(1)
 
 # Open Serial Connection
